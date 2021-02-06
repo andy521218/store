@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "网易云",
+  "usingComponents": {
+    "search": "/compents/Search",
+    "swiper-container": "/compents/SwiperContainer"
+  }
+}
