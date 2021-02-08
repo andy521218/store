@@ -1,7 +1,14 @@
 {
   "pages": [
     "pages/index/index",
-    "compents/Search"
+    "compents/Search",
+    "pages/SearchPage/SearchPage",
+    "pages/SearchPage/SearchRecord/SearchRecord",
+    "pages/SearchPage/SearchHeader/SearchHeader",
+    "pages/SearchPage/SearchHot/SearchHot",
+    "compents/RankingList/RankingList",
+    "compents/Recommend/Recommend",
+    "compents/newSong/newSong"
   ],
   "subPackages": [],
   "window": {
@@ -10,6 +17,5 @@
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap32.json"
+  "usingComponents": {}
 }

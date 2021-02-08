@@ -1,1 +1,1 @@
-<view class="content"><search vue-id="8dd740cc-1" bind:__l="__l"></search><swiper-container vue-id="8dd740cc-2" bind:__l="__l"></swiper-container></view>
+<view class="content"><search vue-id="8dd740cc-1" bind:__l="__l"></search><swiper-container vue-id="8dd740cc-2" bind:__l="__l"></swiper-container><ranking-list vue-id="8dd740cc-3" bind:__l="__l"></ranking-list><recommend vue-id="8dd740cc-4" bind:__l="__l"></recommend><new-song vue-id="8dd740cc-5" bind:__l="__l"></new-song></view>

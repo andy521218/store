@@ -1,1 +1,1 @@
-<view class="search"><image class="search_icon _img" src="{{$root.m0}}" mode="widthFix" alt></image><text>搜索你想听的歌曲</text></view>
+<view data-event-opts="{{[['tap',[['fn',['$event']]]]]}}" class="search" bindtap="__e"><image class="search_icon _img" src="{{$root.m0}}" mode="widthFix" alt></image><text>搜索你想听的歌曲</text></view>

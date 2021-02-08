@@ -1,0 +1,1 @@
+<view class="search_hot"><view class="search_hot_text _h3">热门搜索</view><view class="hot_list"><text class="song_number">1</text><text class="song_name">星辰大海</text><image class="itps_logo _img" src="{{$root.m0}}" mode="widthFix" alt></image></view></view>

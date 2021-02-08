@@ -1,0 +1,1 @@
+<view class="newSong"><view class="_h3">最新歌单</view><view class="song_item"><view class="song_item_left"></view><image class="song_player _img" src="{{$root.m0}}" alt></image></view></view>

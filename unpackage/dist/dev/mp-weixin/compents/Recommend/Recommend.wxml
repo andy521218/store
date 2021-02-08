@@ -1,0 +1,1 @@
+<view class="recommend"><view class="_h3">推荐歌单</view><view class="recommend_box"><block wx:for="{{recommend}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="recommend_item"><image class="recommed_itps _img" src="{{item.picUrl}}" alt></image><text class="recommed_desc">{{item.name}}</text></view></block></view></view>

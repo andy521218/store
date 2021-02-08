@@ -1,8 +1,10 @@
 <template>
-	<view class="search">
+
+	<view class="search" @click="fn">
 		<img class='search_icon' src="../assets/img/search.png" mode="widthFix" alt="">
 		<text>搜索你想听的歌曲</text>
 	</view>
+
 </template>
 
 <script>
@@ -12,7 +14,13 @@
 
 			}
 		},
-
+		methods: {
+			fn() {
+				uni.navigateTo({
+					url: '../SearchPage/SearchPage'
+				})
+			}
+		}
 	}
 </script>
 
@@ -22,7 +30,8 @@
 		height: 44px;
 		background: #f2f4f5;
 		border-radius: 10px;
-		margin: 0 auto;
+		margin: auto;
+		margin-top: 4%;
 		display: flex;
 		align-items: center;
 		justify-content: center;

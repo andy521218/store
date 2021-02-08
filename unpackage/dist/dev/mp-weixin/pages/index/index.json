@@ -2,6 +2,9 @@
   "navigationBarTitleText": "网易云",
   "usingComponents": {
     "search": "/compents/Search",
-    "swiper-container": "/compents/SwiperContainer"
+    "swiper-container": "/compents/SwiperContainer",
+    "ranking-list": "/compents/RankingList/RankingList",
+    "recommend": "/compents/Recommend/Recommend",
+    "new-song": "/compents/newSong/newSong"
   }
 }

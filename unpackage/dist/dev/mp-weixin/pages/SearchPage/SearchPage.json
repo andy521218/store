@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "搜索",
+  "usingComponents": {
+    "search-record": "/pages/SearchPage/SearchRecord/SearchRecord",
+    "search-header": "/pages/SearchPage/SearchHeader/SearchHeader",
+    "search-hot": "/pages/SearchPage/SearchHot/SearchHot"
+  }
+}
