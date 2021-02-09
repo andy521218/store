@@ -4,7 +4,8 @@
 		<SwiperContainer></SwiperContainer>
 		<RankingList></RankingList>
 		<Recommend></Recommend>
-		<newSong></newSong>
+		<newSong ref='song'></newSong>
+		<Footer></Footer>
 	</view>
 </template>
 
@@ -14,13 +15,15 @@
 	import RankingList from '../../compents/RankingList/RankingList.vue'
 	import Recommend from '../../compents/Recommend/Recommend.vue'
 	import newSong from '../../compents/newSong/newSong.vue'
+	import Footer from '../../compents/Footer/Footer.vue'
 	export default {
 		components: {
 			Search,
 			SwiperContainer,
 			RankingList,
 			Recommend,
-			newSong
+			newSong,
+			Footer
 		},
 		data() {
 			return {
@@ -30,8 +33,23 @@
 		onLoad() {
 
 		},
-		methods: {
 
+		onReachBottom() {
+			this.$refs.song.add()
+		},
+		methods: {
+			add() {
+				alert(2)
+			},
+			upper: function(e) {
+				console.log(e)
+			},
+			lower: function(e) {
+				console.log(e)
+			},
+			scroll: function(e) {
+				console.log(e)
+			},
 		}
 	}
 </script>

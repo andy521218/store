@@ -20,7 +20,7 @@
 		},
 		created() {
 			this.$axios.req({
-				url: 'banner',
+				url: '/banner',
 				success: (res) => {
 					this.banner = res.banners
 				}

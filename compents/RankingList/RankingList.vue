@@ -6,9 +6,7 @@
 			<view class="ranking_right">
 				<text class="ranking_title">热歌榜</text>
 				<view class="song_name_box">
-					<text class="ranking_name">1.星辰大海-鞑子</text>
-					<text class="ranking_name">1.星辰大海-鞑子</text>
-					<text class="ranking_name">1.星辰大海-鞑子</text>
+					<text class="ranking_name" v-for="(item,index) in rankingHot" :key='index'>{{index+1}}.{{item.name}}-{{item.artists[0].name}}</text>
 				</view>
 
 			</view>
@@ -18,11 +16,8 @@
 			<view class="ranking_right">
 				<text class="ranking_title">新歌榜</text>
 				<view class="song_name_box">
-					<text class="ranking_name">1.星辰大海-鞑子</text>
-					<text class="ranking_name">1.星辰大海-鞑子</text>
-					<text class="ranking_name">1.星辰大海-鞑子</text>
+					<text class="ranking_name" v-for="(item,index) in rankingNew" :key='index'>{{index+1}}.{{item.name}}-{{item.artists[0].name}}</text>
 				</view>
-
 			</view>
 		</view>
 		<view class="ranking_box">
@@ -30,9 +25,7 @@
 			<view class="ranking_right">
 				<text class="ranking_title">飙升榜</text>
 				<view class="song_name_box">
-					<text class="ranking_name">1.星辰大海-鞑子</text>
-					<text class="ranking_name">1.星辰大海-鞑子</text>
-					<text class="ranking_name">1.星辰大海-鞑子</text>
+					<text class="ranking_name" v-for="(item,index) in rankingRise" :key='index'>{{index+1}}.{{item.name}}-{{item.artists[0].name}}</text>
 				</view>
 			</view>
 		</view>
@@ -43,8 +36,33 @@
 	export default {
 		data() {
 			return {
-
+				rankingHot: [],
+				rankingNew: [],
+				rankingRise: []
 			}
+		},
+		created() {
+			this.$axios.req({
+					url: '/toplist/detail?id=19723756',
+					success: res => {
+						this.rankingHot = res.rewardToplist.songs
+						console.log(res.list)
+					}
+				}),
+				this.$axios.req({
+					url: '/toplist/detail?id=3779629',
+					success: res => {
+						this.rankingNew = res.rewardToplist.songs
+						console.log(res.list)
+					}
+				}),
+				this.$axios.req({
+					url: '/toplist/detail?id=2884035',
+					success: res => {
+						this.rankingRise = res.rewardToplist.songs
+						console.log(res.list)
+					}
+				})
 		},
 		methods: {
 

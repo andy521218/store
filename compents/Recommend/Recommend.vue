@@ -19,10 +19,9 @@
 		},
 		created() {
 			this.$axios.req({
-				url: 'personalized',
+				url: '/personalized',
 				success: (res) => {
 					this.recommend = res.result.splice(0, 6)
-					console.log(res.result)
 				}
 			})
 		},
@@ -48,6 +47,7 @@
 				display: flex;
 				flex-direction: column;
 				margin-bottom: 2%;
+
 				.recommed_itps {
 					width: 28vw;
 					height: 28vw;

@@ -1,7 +1,7 @@
 let apiReq = {
 	req(obj) {
 		var method = obj.method || "GET"; // 请求方式,默认为GET
-		var url = 'http://localhost:3000/' + obj.url || ""; // 请求路径 
+		var url = 'http://localhost:3000' + obj.url || ""; // 请求路径 
 		var data = obj.data || {}; // 请求数据
 		var header = obj.header || {}; // 请求头
 		var success = obj.success; // 成功回调函数
